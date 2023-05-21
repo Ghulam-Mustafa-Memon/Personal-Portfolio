@@ -1,0 +1,338 @@
+/* ______________ Universal ______________ */
+* {
+  margin: 0%;
+  padding: 0%;
+  border: none;
+  scroll-behavior: smooth;
+  color: white;
+  transition: 1s ease all;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  transition: 0.5 ease all;
+}
+
+a:hover {
+  color: brown;
+}
+
+p {
+  margin: 0%;
+  padding: 11px;
+}
+
+button {
+  color: black;
+  padding: 5px 22px;
+  margin: 5px;
+  border-radius: 33px;
+  background: brown;
+  font-weight: bold;
+  box-shadow: 0 0 2rem brown;
+  transition: 0.5s ease all;
+}
+
+button:hover {
+  box-shadow: none;
+}
+
+span {
+  color: brown;
+  font-weight: bolder;
+}
+
+/* ______________ Body ______________ */
+body {
+  /* font-family: ; */
+  background: black;
+}
+
+/* ______________ Navbar ______________ */
+.navbar-container {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 11;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-a {
+  position: relative;
+  margin: 0% 11px;
+  font-weight: bold;
+  color: white;
+  transition: 0.5s ease all;
+}
+.nav-a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 0%;
+  height: 2px;
+  background: brown;
+  transition: 0.5s;
+}
+.nav-a:hover:before {
+  width: 100%;
+}
+.left img {
+  height: 6vh;
+  width: 7vh;
+}
+
+.container-fluid a:hover {
+  color: white;
+}
+
+/* ______________ Header ______________ */
+header {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.888),
+      rgba(0, 0, 0, 0.723),
+      rgba(0, 0, 0, 0)
+    ),
+    url(./images/startup-593341_1920.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 88vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content {
+  width: 55vh;
+  padding: 22px;
+}
+
+.developer {
+  text-shadow: 0 0 10px brown;
+  position: relative;
+}
+
+.developer::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid brown;
+  background: black;
+  animation: typer 2s steps(12) infinite alternate;
+}
+@keyframes typer {
+  100% {
+    left: 100%;
+    margin-left: 18px;
+  }
+}
+.icon {
+  background-color: rgba(0, 0, 0, 0.463);
+  font-size: large;
+  color: brown;
+  border: 2px solid brown;
+  border-radius: 100%;
+  padding: 8px;
+  transition: 0.5s ease all;
+  margin: 7px;
+}
+
+.icon:hover {
+  cursor: pointer;
+  color: black;
+  background: brown;
+  box-shadow: 0 0 1rem brown;
+}
+
+/* ______________ About ______________ */
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 33px;
+}
+
+.about-content {
+  width: 77vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ______________ Services ______________ */
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 22px;
+}
+
+.services-content {
+  padding: 11px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  border-radius: 11px;
+  padding: 20px;
+  margin: 11px;
+  text-align: center;
+  width: 323px;
+  background: black;
+  transition: 0.5s ease all;
+}
+
+.service-card:hover {
+  transform: scale(1.1);
+  border: 2px solid brown;
+  box-shadow: 0 0 2rem brown;
+}
+
+.service-icon {
+  font-weight: bolder;
+  font-size: xx-large;
+  color: brown;
+}
+
+/* ______________ Skills ______________ */
+
+.skills-container {
+  padding: 11px;
+  text-align: center;
+}
+
+.skills-content {
+  padding: 11px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skill {
+  background: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.174)),
+    url(./images/startup-593341_1920.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 8px;
+  width: 313px;
+  height: 202px;
+  border-radius: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bolder;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+  background: linear-gradient(
+      rgba(165, 42, 42, 0.435),
+      rgba(165, 42, 42, 0.703),
+      rgba(165, 42, 42, 0.888),
+      rgb(165, 42, 42)
+    ),
+    url(./images/startup-593341_1920.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 11px;
+}
+
+.skill h3 {
+  margin: 0;
+}
+
+.skill p {
+  margin: 0%;
+  width: 300px;
+}
+
+/* ______________ Contact ______________ */
+.contact-container {
+  text-align: center;
+  padding: 22px;
+}
+
+.contact-content {
+  padding: 22px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-content .message,
+.contacts {
+  height: 55vh;
+  padding: 22px;
+  margin: 11px;
+  background: black;
+  border-radius: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.message {
+}
+
+::placeholder {
+  color: black;
+}
+
+.message input,
+textarea {
+  font-weight: bold;
+  width: 290px;
+  padding: 7px;
+  margin: 11px;
+  background: white;
+  color: black;
+  border-radius: 11px;
+}
+
+.contacts {
+  text-align: left;
+}
+
+.contacts a {
+  font-weight: bold;
+  width: 300px;
+  padding: 5px;
+  margin: 0;
+  border-radius: 11px;
+}
+
+/* ______________ Scroller ______________ */
+#Scroller {
+  position: fixed;
+  right: 2%;
+  bottom: 11%;
+  /* z-index: 11; */
+}
+
+/* ______________ Footer ______________ */
+footer {
+  padding: 11px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
