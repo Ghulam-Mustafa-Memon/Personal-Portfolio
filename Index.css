@@ -71,6 +71,7 @@ body {
   color: white;
   transition: 0.5s ease all;
 }
+
 .nav-a::before {
   content: "";
   position: absolute;
@@ -81,9 +82,11 @@ body {
   background: brown;
   transition: 0.5s;
 }
+
 .nav-a:hover:before {
   width: 100%;
 }
+
 .left img {
   height: 6vh;
   width: 7vh;
@@ -129,12 +132,14 @@ header {
   background: black;
   animation: typer 2s steps(12) infinite alternate;
 }
+
 @keyframes typer {
   100% {
     left: 100%;
     margin-left: 18px;
   }
 }
+
 .icon {
   background-color: rgba(0, 0, 0, 0.463);
   font-size: large;
@@ -209,58 +214,29 @@ header {
   color: brown;
 }
 
-/* ______________ Skills ______________ */
-
-.skills-container {
-  padding: 11px;
+/* ______________ Progress ______________ */
+.progress-container {
+  padding: 22px;
   text-align: center;
 }
 
-.skills-content {
-  padding: 11px;
+.progress-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.skill {
-  background: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.174)),
-    url(./images/startup-593341_1920.jpg);
-  background-position: center;
-  background-size: cover;
-  margin: 8px;
-  width: 313px;
-  height: 202px;
-  border-radius: 11px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-weight: bolder;
+.progress-parts {
+  text-align: left;
+  width: 500px;
 }
 
-.skill:hover {
-  transform: scale(1.1);
-  background: linear-gradient(
-      rgba(165, 42, 42, 0.435),
-      rgba(165, 42, 42, 0.703),
-      rgba(165, 42, 42, 0.888),
-      rgb(165, 42, 42)
-    ),
-    url(./images/startup-593341_1920.jpg);
-  background-size: cover;
-  background-position: center;
-  padding: 11px;
+.progress {
 }
 
-.skill h3 {
-  margin: 0;
-}
-
-.skill p {
-  margin: 0%;
-  width: 300px;
+.progress-bar {
+  background: brown;
 }
 
 /* ______________ Contact ______________ */
